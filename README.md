@@ -116,6 +116,6 @@ This portfolio website is built with:
 
 ---
 
-**Last Updated:** January 2025
+**Last Updated:** September 2025
 
 Feel free to reach out for collaborations, opportunities, or just to connect!
