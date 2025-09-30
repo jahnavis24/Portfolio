@@ -108,10 +108,6 @@ This portfolio website is built with:
    - Choose "main" branch and root folder
    - Save and wait for deployment
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## ⭐ Acknowledgments
 
 - Portfolio template inspired by modern web design practices
