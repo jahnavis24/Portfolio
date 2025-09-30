@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  
+  <title>Jahnavi S | Data Engineer</title>
+
+  <meta name="description" content="Data Engineer with 5+ years of experience in AWS, Azure, ETL pipelines, and machine learning" />
+  <meta name="author" content="Jahnavi S" />
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #intro {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920') center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 4px solid #009688;
+    }
+    
+    .page-title {
+      padding: 20px;
+      margin: 0;
+    }
+    
+    .card {
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    
+    .section {
+      padding: 60px 0;
+    }
+    
+    .teal {
+      background-color: #009688 !important;
+    }
+    
+    .teal-text {
+      color: #009688 !important;
+    }
+    
+    .hoverline:hover {
+      border-bottom: 2px solid #009688;
+      transition: 0.3s;
+    }
+    
+    .side-nav {
+      background-color: #fff;
+      position: fixed;
+      width: 240px;
+      left: 0;
+      top: 0;
+      height: 100%;
+      padding-top: 20px;
+      overflow-y: auto;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    
+    .side-nav li {
+      padding: 10px 20px;
+    }
+    
+    .side-nav a {
+      display: flex;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      transition: 0.3s;
+    }
+    
+    .side-nav a:hover {
+      background-color: #e0f2f1;
+      border-left: 4px solid #009688;
+    }
+    
+    .side-nav a.active {
+      background-color: #e0f2f1;
+      border-left: 4px solid #009688;
+      font-weight: 500;
+    }
+    
+    .side-nav i {
+      margin-right: 10px;
+    }
+    
+    main {
+      margin-left: 240px;
+    }
+    
+    @media only screen and (max-width: 992px) {
+      main {
+        margin-left: 0;
+      }
+      .hide-on-small-only {
+        display: none !important;
+      }
+      .side-nav {
+        transform: translateX(-100%);
+      }
+    }
+    
+    .icon-btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+      color: white;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    
+    .icon-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .linkedin { background-color: #0077B5; }
+    .github { background-color: #333; }
+    
+    .buttons a {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      background-color: #009688;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .buttons a:hover {
+      background-color: #00796b;
+      transform: translateY(-2px);
+    }
+    
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .card-action {
+      padding: 15px 20px;
+      background-color: #f5f5f5;
+      border-top: 1px solid #e0e0e0;
+    }
+    
+    .card-action a {
+      margin-right: 15px;
+      color: #009688;
+      text-decoration: none;
+    }
+    
+    .card-action a:hover {
+      text-decoration: underline;
+    }
+    
+    .role {
+      color: #795548;
+      font-weight: 500;
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    
+    .skill-icon {
+      width: 70px;
+      height: 70px;
+      margin: 10px auto;
+    }
+    
+    .container {
+      max-width: 1200px;
+    }
+    
+    .flow-text {
+      line-height: 1.8;
+    }
+    
+    .typing {
+      color: #4db6ac;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Menu-->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed">
+      <li class="logo" style="text-align: center; padding: 30px 20px;">
+        <img src="https://via.placeholder.com/200/009688/ffffff?text=JS" class="circle profile-pic" alt="Jahnavi S">
+      </li>
+
+      <li><a href="#about" class="waves-effect teal-text nav-link"><i class="fa fa-user"></i> About</a></li>
+      <li><a href="#experience" class="waves-effect teal-text nav-link"><i class="fa fa-briefcase"></i> Experience</a></li>
+      <li><a href="#projects" class="waves-effect teal-text nav-link"><i class="fa fa-folder"></i> Projects</a></li>
+      <li><a href="#skills" class="waves-effect teal-text nav-link"><i class="fa fa-code"></i> Skills</a></li>
+      <li><a href="#education" class="waves-effect teal-text nav-link"><i class="fa fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#certifications" class="waves-effect teal-text nav-link"><i class="fa fa-certificate"></i> Certifications</a></li>
+      <li><a href="#contact" class="waves-effect teal-text nav-link"><i class="fa fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Intro -->
+    <section id="intro">
+      <div class="container" style="color: white;">
+        <div class="content" style="margin-left: 5%; margin-top: 50px;">
+          <div class="caption">
+            <h2>Hi, I'm <span style="color: #4db6ac;">Jahnavi S</span></h2>
+            <h5><span class="typing">Data Engineer | AWS & Azure Specialist | ML Pipeline Architect</span></h5>
+            <h5 style="margin-top: 20px; max-width: 800px;">5+ years of experience building scalable data platforms, processing 15TB+ data across 100+ ETL pipelines, and deploying ML solutions serving 100K+ predictions daily.</h5>
+          </div>
+          <div class="social" style="margin: 30px 0;">
+            <a href="http://www.linkedin.com/in/jahnavi-s-07412537a" target="_blank">
+              <button class="icon-btn linkedin"><i class="fa fa-linkedin"></i></button>
+            </a>
+            <a href="https://github.com/jahnavis24" target="_blank">
+              <button class="icon-btn github"><i class="fa fa-github"></i></button>
+            </a>
+          </div>
+          <div class="buttons">
+            <a href="#about">Read More</a>
+            <a href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <p>
+          I am a Data Engineer with 5+ years of experience architecting and operating scalable data platforms. I've delivered over 100+ data assets supporting high-throughput batch, real-time, and ML use cases across cloud ecosystems.
+        </p>
+        <p>
+          Currently pursuing my Master of Science in Business Analytics at the University of Houston, I specialize in building production-grade ETL pipelines, optimizing enterprise data warehouses, and deploying containerized ML inference services.
+        </p>
+        <p>
+          <ul>
+            <li><b>Programming Languages:</b> Python, SQL</li>
+            <li><b>ETL Tools:</b> Azure Data Factory, SSIS, AWS Glue, Lambda, Databricks, PySpark</li>
+            <li><b>Cloud Platforms:</b> AWS (S3, Glue, Redshift, Lambda, Athena, EMR, SageMaker, QuickSight, EKS), Azure (Data Factory, ADLS, Synapse Analytics, Azure ML, AKS)</li>
+            <li><b>Databases:</b> SQL Server, Azure SQL, RDS, Redshift, Synapse Analytics</li>
+            <li><b>Big Data & Streaming:</b> Hadoop, PySpark, Kafka, Kinesis, MapReduce, Hive</li>
+            <li><b>BI Tools:</b> Tableau, Power BI, SSRS</li>
+            <li><b>DevOps:</b> Jenkins, Git, Azure DevOps, CodePipeline, Docker</li>
+          </ul>
+        </p>
+        <p>
+          I'm passionate about building complex data solutions that solve real-world problems and drive business impact through data-driven insights.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+        
+        <!-- Capital One -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12">
+                <p><span class="card-title"><a href="https://www.capitalone.com" target="_blank" class="teal-text hoverline">Capital One</a></span></p>
+              </div>
+            </div>
+            <div class="role">Data Engineer</div>
+            <ul>
+              <li>Engineered 20+ ETL pipelines using AWS Glue, Lambda, and Step Functions, orchestrating batch workflows that moved and transformed 1.2B+ records/month across S3 and Redshift</li>
+              <li>Streamlined real-time ingestion of financial transaction data using Kafka, Kinesis, and Lambda, reducing streaming latency to <1 second for 1M+ daily events</li>
+              <li>Modeled and deployed 15+ Redshift schemas, applying advanced data modeling principles and improving analytical query speeds by 60%</li>
+              <li>Implemented DBT-based transformation layers on Redshift with test coverage and documentation, enabling 100% data lineage traceability across 40 models</li>
+              <li>Designed 10+ scalable PySpark jobs on EMR clusters to process multi-terabyte batch datasets, accelerating processing time by 4x</li>
+              <li>Deployed 3 ML pipelines using SageMaker, EKS, and EC2-based training jobs, supporting 10M+ model predictions/month in fraud and credit workflows</li>
+              <li>Developed custom anomaly detection models in SageMaker to identify suspicious transactions in near real time, improving fraud catch rate by 18%</li>
+              <li><b>Tools:</b> AWS Glue, Lambda, Step Functions, Redshift, Kafka, Kinesis, PySpark, EMR, SageMaker, DBT, CloudWatch</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Feb 2024 - Present | McLean, VA</span>
+          </div>
+        </div>
+
+        <!-- Cigna Health -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12">
+                <p><span class="card-title"><a href="https://www.cigna.com" target="_blank" class="teal-text hoverline">Cigna Health</a></span></p>
+              </div>
+            </div>
+            <div class="role">Data Engineer</div>
+            <ul>
+              <li>Developed and maintained 15+ ETL pipelines in AWS Glue to extract and transform claims and provider data from 10+ source systems, ingesting 1.5B+ rows/month into Redshift</li>
+              <li>Architected real-time ingestion of provider alerts and EHR updates using Kafka, Kinesis, and Lambda, reducing operational event delays by 90%</li>
+              <li>Orchestrated PySpark batch jobs on EMR to transform and cleanse 1TB+ data/week, supporting analytics use cases across care quality and cost optimization</li>
+              <li>Built and optimized 30+ stored procedures in RDS and Redshift, improving report generation performance by up to 80%</li>
+              <li>Enabled CDC from 10+ SQL Server sources to AWS RDS and Redshift using AWS DMS and Lambda orchestrators</li>
+              <li>Migrated 1.5TB of historical data from on-premise SQL Server to Redshift, applying optimizations that reduced query times by 50%</li>
+              <li>Built patient risk stratification models in SageMaker to predict likelihood of chronic condition onset, supporting proactive care for 500K+ members</li>
+              <li><b>Tools:</b> AWS Glue, PySpark, EMR, Redshift, RDS, Kafka, Kinesis, Lambda, SageMaker, SSIS, Jenkins</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Jun 2021 - Aug 2023 | Chennai, India</span>
+          </div>
+        </div>
+
+        <!-- Verzeo -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12">
+                <p><span class="card-title teal-text">Verzeo</span></p>
+              </div>
+            </div>
+            <div class="role">Data Engineer</div>
+            <ul>
+              <li>Developed 5 automated ETL pipelines using Azure Data Factory, ingesting ~500K daily records from SQL Server and flat files into Synapse Analytics</li>
+              <li>Designed and deployed multiple SSIS packages to extract and transform transactional data from on-prem SQL Server into Azure SQL, reducing manual data prep time by 80%</li>
+              <li>Built multidimensional and tabular models using SSAS, supporting 10+ executive dashboards with pre-aggregated KPIs; enhanced query performance by 40%</li>
+              <li>Authored 20+ interactive reports using SSRS, deployed on report servers for 300+ internal stakeholders across 4 departments</li>
+              <li>Deployed containerized validation scripts to AKS, orchestrating 10+ parallel jobs in support of Azure ML workflows with 85%+ prediction accuracy</li>
+              <li><b>Tools:</b> Azure Data Factory, SSIS, SSAS, SSRS, Azure SQL, Synapse Analytics, AKS, Azure Functions</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Jan 2021 - Jun 2021 | Chennai, India</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <!-- CLABSI Prediction Project -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img alt="Healthcare ML project" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop" />
+              </div>
+              <div class="card-content">
+                <span class="card-title teal-text">CLABSI Prediction System</span>
+                <p>Machine learning models to predict Central Line-Associated Bloodstream Infections in pediatric ICU patients.</p>
+              </div>
+              <div class="card-reveal" style="display: none; position: absolute; background: white; width: 100%; height: 100%; top: 0; left: 0; padding: 20px; overflow-y: auto;">
+                <span class="card-title" style="cursor: pointer;">Project Details<i class="fa fa-times" style="float: right;"></i></span>
+                <ul>
+                  <li>Built predictive models using Random Forest and CatBoost on 1.5M clinical records, achieving 87% accuracy</li>
+                  <li>Cleaned and engineered EHR features from 30+ clinical variables to improve model reliability and interpretability</li>
+                  <li>Collaborated with healthcare professionals to generate insights and visualizations in Power BI</li>
+                  <li>Supported prevention strategies reducing ICU costs by a projected 15%</li>
+                  <li><b>Tools:</b> Python, Random Forest, CatBoost, Power BI, Pandas, Scikit-learn</li>
+                </ul>
+              </div>
+              <div class="card-action">
+                <a href="#" onclick="event.preventDefault(); this.closest('.card').querySelector('.card-reveal').style.display='block';"><i class="fa fa-info-circle"></i> View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud Migration Project -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img alt="Cloud migration" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" />
+              </div>
+              <div class="card-content">
+                <span class="card-title teal-text">Cloud Migration (AWS to Azure)</span>
+                <p>Led migration of 15TB Redshift warehouse and 50+ ETL pipelines to Azure Synapse and Data Factory.</p>
+              </div>
+              <div class="card-reveal" style="display: none; position: absolute; background: white; width: 100%; height: 100%; top: 0; left: 0; padding: 20px; overflow-y: auto;">
+                <span class="card-title" style="cursor: pointer;">Project Details<i class="fa fa-times" style="float: right;"></i></span>
+                <ul>
+                  <li>Migrated 15TB Amazon Redshift data warehouse to Azure Synapse Analytics</li>
+                  <li>Designed data transfer workflows from S3 to Azure Blob Storage using ADF</li>
+                  <li>Reimplemented 50+ Glue/Lambda transformations in Databricks (PySpark)</li>
+                  <li>Ensured CDC via AWS DMS and Event Hubs</li>
+                  <li>Optimized Synapse schema and partitioning, reducing query execution time by 55%</li>
+                  <li>Implemented validation scripts achieving 100% reconciliation accuracy across 200+ tables</li>
+                  <li>Reduced monthly cloud costs by 30% and improved Azure ecosystem integration</li>
+                  <li><b>Tools:</b> AWS (Redshift, S3, Glue, DMS), Azure (Synapse, Data Factory, Blob Storage, Event Hubs), Databricks, PySpark</li>
+                </ul>
+              </div>
+              <div class="card-action">
+                <a href="#" onclick="event.preventDefault(); this.closest('.card').querySelector('.card-reveal').style.display='block';"><i class="fa fa-info-circle"></i> View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Patient Risk Stratification -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img alt="Healthcare analytics" src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=400&h=300&fit=crop" />
+              </div>
+              <div class="card-content">
+                <span class="card-title teal-text">Patient Risk Stratification</span>
+                <p>ML models predicting chronic condition onset for proactive care of 500K+ members.</p>
+              </div>
+              <div class="card-reveal" style="display: none; position: absolute; background: white; width: 100%; height: 100%; top: 0; left: 0; padding: 20px; overflow-y: auto;">
+                <span class="card-title" style="cursor: pointer;">Project Details<i class="fa fa-times" style="float: right;"></i></span>
+                <ul>
+                  <li>Developed predictive models in SageMaker for chronic disease risk assessment</li>
+                  <li>Processed and analyzed EHR data, claims, and provider information</li>
+                  <li>Automated model monitoring pipelines to detect performance drift</li>
+                  <li>Reduced retraining delays by 40% through automated monitoring</li>
+                  <li><b>Tools:</b> AWS SageMaker, Python, Redshift, PySpark, CloudWatch</li>
+                </ul>
+              </div>
+              <div class="card-action">
+                <a href="#" onclick="event.preventDefault(); this.closest('.card').querySelector('.card-reveal').style.display='block';"><i class="fa fa-info-circle"></i> View Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        
+        <!-- Programming Languages -->
+        <div class="card">
+          <div class="card-content">
+            <h4 style="color: #795548; font-weight: 300;">Programming Languages</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon">
+                <p>Python</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-icon">
+                <p>SQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud Platforms -->
+        <div class="card">
+          <div class="card-content">
+            <h4 style="color: #795548; font-weight: 300;">Cloud Platforms</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="skill-icon">
+                <p>AWS</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" class="skill-icon">
+                <p>Azure</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p><b>AWS:</b> S3, Glue, Redshift, Lambda, Athena, EMR, CloudWatch, Step Functions, RDS, EC2, SageMaker, QuickSight, EKS, CodePipeline</p>
+                <p><b>Azure:</b> Data Factory, ADLS, Synapse Analytics, Azure SQL, Azure ML, AKS, Azure Functions, Blob Storage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ETL & Big Data -->
+        <div class="card">
+          <div class="card-content">
+            <h4 style="color: #795548; font-weight: 300;">ETL & Big Data Technologies</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" class="skill-icon">
+                <p>PySpark</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" class="skill-icon">
+                <p>Kafka</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://www.vectorlogo.zone/logos/databricks/databricks-icon.svg" class="skill-icon">
+                <p>Databricks</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p><b>Tools:</b> Azure Data Factory, SSIS, AWS Glue, Lambda, Databricks, PySpark, Hadoop, Kafka, Kinesis, MapReduce, Hive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Warehousing -->
+        <div class="card">
+          <div class="card-content">
+            <h4 style="color: #795548; font-weight: 300;">Databases & Data Warehousing</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon">
+                <p>PostgreSQL</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="skill-icon">
+                <p>SQL Server</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" class="skill-icon">
+                <p>Redshift</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p><b>Technologies:</b> SQL Server, Azure SQL, RDS, Redshift, Synapse Analytics, SSAS, DBT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BI & DevOps -->
+        <div class="card">
+          <div class="card-content">
+            <h4 style="color: #795548; font-weight: 300;">BI Tools & DevOps</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" class="skill-icon">
+                <p>Tableau</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg" class="skill-icon">
+                <p>Power BI</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon">
+                <p>Git</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" class="skill-icon">
+                <p>Jenkins</p>
+              </div>
+              <div class="col s4 m2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="skill-icon">
+                <p>Docker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="https://www.uh.edu/" target="_blank" class="teal-text hoverline">University of Houston</a></span></p>
+                <p style="color: #795548;">Houston, Texas, USA</p>
+                <p>
+                  <b>Degree:</b> Master of Science in Business Analytics<br>
+                  <b>Status:</b> In Progress
+                </p>
+                <p><b>Focus Areas:</b></p>
+                <ul>
+                  <li>Advanced Analytics & Machine Learning</li>
+                  <li>Data Engineering & Cloud Computing</li>
+                  <li>Business Intelligence & Visualization</li>
+                  <li>Predictive Modeling & Optimization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <h3 class="page-title white-text teal">Certifications</h3>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title teal-text">AWS Certified Solutions Architect – Associate</span>
+                <p style="margin-top: 10px;">Demonstrated expertise in designing distributed systems on AWS, including compute, storage, database, and networking services.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title teal-text">Databricks Certified Data Engineer Associate</span>
+                <p style="margin-top: 10px;">Validated skills in building and managing data pipelines using Apache Spark and Databricks platform.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p style="font-size: 1.1em; margin: 20px 0;">
+          <i class="fa fa-phone" style="margin-right: 10px; color: #009688;"></i>
+          <a href="tel:+14433008719" class="hoverline">+1 (443) 300-8719</a>
+        </p>
+        <p style="font-size: 1.1em; margin: 20px 0;">
+          <i class="fa fa-envelope" style="margin-right: 10px; color: #009688;"></i>
+          <a href="mailto:saijahnavi2412@gmail.com" class="hoverline">saijahnavi2412@gmail.com</a>
+        </p>
+        <p style="font-size: 1.1em; margin: 20px 0;">
+          <i class="fa fa-github" style="margin-right: 10px; color: #009688;"></i>
+          <a href="https://github.com/jahnavis24" target="_blank" class="hoverline">github.com/jahnavis24</a>
+        </p>
+        <p style="font-size: 1.1em; margin: 20px 0;">
+          <i class="fa fa-linkedin" style="margin-right: 10px; color: #009688;"></i>
+          <a href="http://www.linkedin.com/in/jahnavi-s-07412537a" target="_blank" class="hoverline">linkedin.com/in/jahnavi-s-07412537a</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  
+  <script>
+    // Smooth scrolling with active state management
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+    
+    // Smooth scroll on click
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // Remove active class from all links
+        navLinks.forEach(l => l.classList.remove('active'));
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // Smooth scroll to section
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          });
+        }
+      });
+    });
+    
+    // Update active link on scroll
+    function updateActiveLink() {
+      let currentSection = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (window.pageYOffset >= sectionTop - 100) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+    
+    // Listen to scroll events
+    window.addEventListener('scroll', updateActiveLink);
+    
+    // Set initial active state
+    updateActiveLink();
+
+    // Close card reveal on X click
+    document.querySelectorAll('.card-reveal .fa-times').forEach(btn => {
+      btn.parentElement.addEventListener('click', function() {
+        this.parentElement.style.display = 'none';
+      });
+    });
+
+    // Initialize Materialize components
+    $(document).ready(function () {
+      $('.button-collapse').sideNav();
+      
+      // Set first link as active initially
+      const firstLink = document.querySelector('.nav-link');
+      if (firstLink) {
+        firstLink.classList.add('active');
+      }
+    });
+  </script>
+</body>
+
+</html>
