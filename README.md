@@ -4,7 +4,7 @@ Personal portfolio website showcasing my experience as a Data Engineer with 5+ y
 
 ## 🌐 Live Website
 
-Visit my portfolio at: [https://jahnavis24.github.io](https://jahnavis24.github.io)
+Visit my portfolio at: [https://jahnavis24.github.io/Portfolio/](https://jahnavis24.github.io/Portfolio/)
 
 ## 👩‍💻 About Me
 
